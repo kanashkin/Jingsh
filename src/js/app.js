@@ -1,10 +1,6 @@
 import './modules/isWebp.js'
+import tabs from './modules/tabs.js';
 
-function testFunc() {
-    console.log(1);
-    console.log(2);
-
-    if (true) {
-        console.log(true);
-    }
-}
+window.addEventListener('DOMContentLoaded', function() {
+    tabs('.services__tab', '.services__content')
+})

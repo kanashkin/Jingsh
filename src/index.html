@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html',{
-  "title":"Юридическая фирма Цзиньши",
-  "cssHref": "css/style.min.css"
+	"title":"Юридическая фирма Цзиньши",
+	"cssHref": "css/index.min.css"
 })
 
 <body>
-  @@include('html/header.html',{})
-  @@include('html/footer.html',{})
-  <script src="js/app.min.js"></script>
+	@@include('html/header.html',{})
+
+	<main>
+		<section class="promo">
+			<div class="container">
+				<div class="promo__header">
+					<h1 class="promo__title">Традиционные ценности, <br> инновационный подход</h1>
+					<div class="promo__offer">
+						<p class="promo__offer-descr">
+							Сочетание непоколебимых восточных ценностей с инновационными западными методами превращает предоставление услуг в искусство.
+						</p>
+						<button class="promo__offer-btn red-btn">Получить консультацию</button>
+					</div>
+				</div>
+				<img class="promo__img" src="img/main-page/promo/promo-img.jpg" alt="">
+			</div>
+		</section>
+		<section class="services">
+			<div class="container">
+				<h2 class="title">Услуги в России</h2>
+				<div class="services__tabs">
+					<button class="services__tab active" data-tab="tab-1">Области юридической практики</button>
+					<button class="services__tab" data-tab="tab-2">Бизнес услуги</button>
+				</div>
+				<div class="services__content active" data-tab="tab-1">
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/01.png" alt="">
+						<h3 class="services__item-title">Защита в уголовных делах</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/02.png" alt="">
+						<h3 class="services__item-title">Отраслевые практики</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/03.png" alt="">
+						<h3 class="services__item-title">Гражданско-правовая практика</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/04.png" alt="">
+						<h3 class="services__item-title">Санкционный комплаенс</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/05.png" alt="">
+						<h3 class="services__item-title">Юридическое сопровождение  инвесторов в разных странах</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/06.png" alt="">
+						<h3 class="services__item-title">Услуги частным лицам</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/07.png" alt="">
+						<h3 class="services__item-title">Разрешение споров и арбитраж</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/08.png" alt="">
+						<h3 class="services__item-title">Юридическое сопровождение иностранных инвесторов России</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/practice/09.png" alt="">
+						<h3 class="services__item-title">Регулятивно-административная практика</h3>
+					</article>
+				</div>
+				<div class="services__content" data-tab="tab-2">
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/business/01.png" alt="">
+						<h3 class="services__item-title">Защита в уголовных делах</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/business/02.png" alt="">
+						<h3 class="services__item-title">Отраслевые практики</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/business/03.png" alt="">
+						<h3 class="services__item-title">Гражданско-правовая практика</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/business/04.png" alt="">
+						<h3 class="services__item-title">Санкционный комплаенс</h3>
+					</article>
+					<article class="services__item">
+						<img class="services__item-photo" src="img/main-page/services/business/05.png" alt="">
+						<h3 class="services__item-title">Юридическое сопровождение  инвесторов в разных странах</h3>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>

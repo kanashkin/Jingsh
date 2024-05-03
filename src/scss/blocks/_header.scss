@@ -19,7 +19,7 @@
 
         &-item {
             border-radius: 5px;
-            color: #484848;
+            color: $grayColor;
             text-transform: uppercase;
             font-size: 14px;
             font-weight: 700;
@@ -31,7 +31,7 @@
         &-item.active,
         &-item:hover {
             color: #ffffff;
-            background: #E30519;
+            background: $redColor;
         }
 
         &-item a {

@@ -1,0 +1,96 @@
+@import 'base/variables';
+
+// PROMO SECTION
+
+.promo {
+    margin-top: 80px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        text-shadow: 0px 2px #00000040;
+        line-height: calc(57.6px / 48px) * 100%;
+    }
+
+    &__offer {
+        max-width: 486px;
+
+        &-descr {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: calc(26px / 18px) * 100%;
+        }
+
+        &-btn {
+            margin-top: 28px;
+            padding: 14px 22px;
+        }
+    }
+
+    &__img {
+        margin-top: 80px;
+        border-radius: 24px;
+    }
+}
+
+// SERVICES SECTION
+
+.services {
+    margin-top: 154px;
+
+    &__tabs {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tab {
+        padding-bottom: 12px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: calc(26px / 24px) * 100%;
+        min-width: 439px;
+        color: $grayColor;
+        border-bottom: 1px solid $grayColor;
+        transition: .3s all;
+    }
+
+    &__tab.active {
+        color: #000000;
+        border-bottom: 1px solid $redColor;
+    }
+
+    &__content {
+        margin-top: 48px;
+        grid-template-columns: repeat(3, 275px);
+        justify-content: center;
+        column-gap: 80px;
+
+        display: none;
+    }
+
+    &__content.active {
+        display: grid;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        height: 170px;
+
+        &-title {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: calc(26px / 18px) * 100%;
+        }
+    }
+}
