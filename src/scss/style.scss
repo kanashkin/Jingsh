@@ -20,7 +20,9 @@
     background-color: $hoverRedColor;
 }
 
-.link-btn {
+.before-btn {
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
 }
 
