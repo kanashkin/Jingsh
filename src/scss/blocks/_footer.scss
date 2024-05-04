@@ -1,0 +1,48 @@
+.footer {
+    margin-top: 140px;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo {
+        width: 283px;
+    }
+
+    &__copyright {
+        margin-top: auto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+        color: $grayColor;
+    }
+
+    &__nav {
+        margin-top: 24px;
+
+        &-title {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 100%;
+            color: $grayColor;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &-item {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 100%;
+        }
+    }
+}
