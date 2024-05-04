@@ -53,3 +53,24 @@
 .no-scrollbar {
     -ms-overflow-style: none;
 }
+
+.chat {
+    position: fixed;
+    z-index: 10;
+    bottom: 50px;
+    right: 17px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $redColor;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 43px;
+    transition: .3s all;
+}
+
+.chat:hover {
+    background: $hoverRedColor;
+}
