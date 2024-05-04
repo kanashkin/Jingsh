@@ -36,3 +36,13 @@
     left: 0;
     top: -16px;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    scrollbar-width: 0px;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+}
