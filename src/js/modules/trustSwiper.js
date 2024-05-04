@@ -10,6 +10,9 @@ function trustSwiper() {
             navigation: {
                 prevEl: '.trust__swiper-left',
                 nextEl: '.trust__swiper-right'
+            },
+            autoplay: {
+                delay: 4000,
             }
         })
     }

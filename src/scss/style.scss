@@ -20,6 +20,10 @@
     background-color: $hoverRedColor;
 }
 
+.link-btn {
+    align-items: center;
+}
+
 .title {
     font-size: 36px;
     font-weight: 600;
@@ -34,7 +38,7 @@
     background: $redColor;
     position: absolute;
     left: 0;
-    top: -16px;
+    top: -14px;
 }
 
 .no-scrollbar::-webkit-scrollbar {

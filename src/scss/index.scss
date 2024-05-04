@@ -134,6 +134,7 @@
 
     &__card {
         width: 486px !important;
+        height: auto !important;
         padding: 16px 24px 55px 24px;
         gap: 8px;
         border-radius: 5px;
@@ -205,5 +206,68 @@
         font-size: 18px;
         font-weight: 300;
         line-height: calc(26px / 18px) * 100%;
+    }
+}
+
+// NEWS SECTION
+
+.news {
+    margin-top: 154px;
+
+    &__items {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    &__item {
+        display: flex;
+
+        &-preview {
+            width: calc(384px / 1200px) * 100%;
+            object-fit: contain
+        }
+
+        &-content {
+            max-width: 100%;
+        }
+    }
+
+    &__content {
+        padding: 24px;
+        padding-bottom: 74px;
+        border: 1px solid #E7E6E6;
+        background: #FAFAFA;
+
+        &-date {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: calc(26px / 14px) * 100%;
+        }
+
+        &-title {
+            margin-top: 12px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: calc(26px / 24px) * 100%;
+        }
+
+        &-descr {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: calc(24px / 16px) * 100%;
+        }
+    }
+
+    &-btn {
+        margin-top: 32px;
+        padding: 14px 22px;
+        gap: 10px;
+    }
+
+    &-btn div::before {
+        font-size: 10px;
     }
 }
