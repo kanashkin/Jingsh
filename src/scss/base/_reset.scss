@@ -51,3 +51,10 @@ input {
 		max-width: calc(977px + 24px * 2);
 	}
 }
+
+@media(max-width: 990px) {
+	.container {
+		padding: 0 24px;
+		max-width: calc(560px + 24px * 2);
+	}
+}

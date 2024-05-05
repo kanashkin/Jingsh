@@ -75,8 +75,33 @@
     background: $hoverRedColor;
 }
 
+.logo img {
+    object-fit: none;
+}
+
 @media(max-width: 1279px) {
     .title {
         font-size: 32px;
+    }
+}
+
+@media(max-width: 990px) {
+    .logo img {
+        object-fit: contain;
+    }
+    .red-btn {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 20px;
+        line-height: calc(48px / 20px) * 100%;
+    }
+    .chat {
+        bottom: 40px;
+        right: 24px;
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        transition: .3s all;
     }
 }
