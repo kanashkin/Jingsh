@@ -56,3 +56,22 @@
 .langs__item.active {
     color: #000000;
 }
+
+.burger-btn {
+    display: none;
+}
+
+@media(max-width: 1279px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+
+        &__content {
+            gap: 32px;
+        }
+    }
+    .burger-btn {
+        display: inline-flex;
+    }
+}

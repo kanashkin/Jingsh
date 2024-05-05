@@ -44,3 +44,10 @@ input {
 	margin: 0 auto;
 	padding: 0 40px;
 }
+
+@media(max-width: 1279px) {
+	.container {
+		padding: 0 24px;
+		max-width: calc(977px + 24px * 2);
+	}
+}
