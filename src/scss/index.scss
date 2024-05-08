@@ -524,6 +524,81 @@
     &__point:hover {
         fill: $redColor !important;
     }
+
+    &__offices {
+        margin-top: 100px;
+    }
+}
+
+.offices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    &__pagination {
+        width: 100%;
+        margin-top: 36px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        &-control {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            border: 1px solid #E7E6E6;
+        }
+
+        &-item {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            border-width: 2px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: calc(20px / 16px) * 100%;
+            letter-spacing: -0.05000000074505806px;
+            color: #4F4D55;
+        }
+
+        &-item.active {
+            border: 2px solid $redColor;
+            color: $redColor;
+        }
+    }
+}
+
+.office {
+    position: relative;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 16px 0;
+        background: #00000066;
+        color: #ffffff;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+
+        i {
+            font-size: 22px;
+        }
+
+        &-city {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: calc(26px / 20px) * 100%;
+        }
+    }
 }
 
 @keyframes geoPoint {
@@ -535,6 +610,28 @@
     }
     100% {
         
+    }
+}
+
+@media(max-width: 1279px) {
+    .offices {
+        gap: 19.52px;
+    }
+    .office {
+        height: 244px;
+
+        &__info {
+            padding: 14px 0;
+            gap: 11px;
+
+            i {
+                font-size: 19px;
+            }
+
+            &-city {
+                font-size: 16px;
+            }
+        }
     }
 }
 
