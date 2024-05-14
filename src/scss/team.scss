@@ -87,8 +87,74 @@
     }
 }
 
+@media(max-width: 1279px) {
+    .team {
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            max-width: 588px;
+
+            &-img {
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+    }
+}
+
+@media(max-width: 999px) {
+    .team {
+        margin-top: 57px;
+
+        &__btn {
+            margin-top: 16px;
+        }
+
+        &__items {
+            margin-top: 80px;
+            gap: 32px;
+        }
+
+        &__item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+
+            &-name {
+                font-size: 14px;
+            }
+
+            &-post {
+                font-size: 12px;
+            }
+
+            &-descr {
+                font-size: 12px;
+            }
+
+            &-img {
+                max-height: 130px;
+                max-width: 130px;
+            }
+        }
+
+        &__item-content {
+            padding-left: 0;
+        }
+    }
+}
+
 // CONTACT SECTION
 
 .contact {
     margin-top: 230px;
+}
+
+@media(max-width: 1279px) {
+    .contact {
+        margin-top: 200px;
+    }
 }
