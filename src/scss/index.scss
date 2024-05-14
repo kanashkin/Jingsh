@@ -1,4 +1,5 @@
 @import 'base/variables';
+@import 'blocks/_contact.scss';
 
 // PROMO SECTION
 
@@ -9,13 +10,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    &__title {
-        font-size: 48px;
-        font-weight: 700;
-        text-shadow: 0px 2px #00000040;
-        line-height: calc(57.6px / 48px) * 100%;
     }
 
     &__offer {
@@ -29,7 +23,6 @@
 
         &-btn {
             margin-top: 28px;
-            padding: 14px 22px;
         }
     }
 
@@ -42,10 +35,6 @@
 @media(max-width: 1279px) {
     .promo {
         margin-top: 84px;
-
-        &__title {
-            font-size: 36px;
-        }
 
         &__offer {
             max-width: 434px;
@@ -65,11 +54,6 @@
             flex-direction: column;
             gap: 16px;
             align-items: flex-start;
-        }
-
-        &__title {
-            font-size: 20px;
-            text-shadow: none;
         }
 
         &__img {
@@ -439,7 +423,6 @@
 
     &-btn {
         margin-top: 32px;
-        padding: 14px 22px;
         gap: 10px;
     }
 
@@ -645,132 +628,4 @@
 
 .contact {
     margin-top: 140px;
-    padding: 0 40px;
-
-    &__wrapper {
-        margin: 0 auto;
-        max-width: 933px;
-        background: #FAFAFA;
-        border: 1px solid #E7E6E6;
-        border-radius: 15px;
-        padding: 62px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__call {
-        display: flex;
-        flex-direction: column;
-
-        &-title {
-            font-size: 48px;
-            font-weight: 600;
-            line-height: calc(57.6px / 48px) * 100%;
-        }
-        &-subtitle {
-            margin-top: 16px;
-            max-width: 261px;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: calc(24px / 16px) * 100%;
-        }
-        &-btn {
-            margin-top: auto;
-            padding: 8.5px 0;
-            max-width: 350px;
-            width: 100%;
-            gap: 15px;
-        }
-        &-btn i {
-            font-size: 15px;
-        }
-    }
-
-    &__form {
-        width: 320px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-
-        &-input {
-            padding: 10px 14px 10px 42px;
-            border: 1px solid rgba(255, 255, 255, .4);
-            border-radius: 8px;
-            box-shadow: 0px 1px 1px 0px #0000001F,
-            0px 0px 0px 1px #676E7629,
-            0px 2px 5px 0px #676E7614;
-            font-family: 'PT';
-            font-size: 16px;
-            font-weight: 400;
-            line-height: calc(24px / 16px) * 100%;
-            color: $grayColor;
-            background: url('../img/common/planet.svg')
-            left 14px center / contain no-repeat;
-            background-size: 16px;
-        }
-
-        &-input::placeholder {
-            color: $grayColor;
-        }
-
-        &-accept {
-            font-size: 16px;
-            font-weight: 300;
-            line-height: calc(24px / 16px) * 100%;
-            color: #707070;
-        }
-
-        &-btn {
-            padding: 8.5px 0;
-            gap: 10px;
-        }
-
-        &-btn i {
-            font-size: 10px;
-        }
-    }
-}
-
-@media(max-width: 1279px) {
-    .contact {
-        padding: 0 24px;
-    }
-}
-
-@media(max-width: 990px) {
-    .contact {
-        padding: 0;
-
-        &__wrapper {
-            padding: 55px 24px;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-        }
-
-        &__call {
-            max-width: 350px;
-
-            &-title {
-                font-size: 32px;
-            }
-            &-subtitle {
-                order: 3;
-                margin-top: 50px;
-                max-width: 100%;
-            }
-            &-btn {
-                margin-top: 24px;
-            }
-        }
-
-        &__form {
-            max-width: 350px;
-            width: 100%;
-
-            &-accept {
-                font-size: 12px;
-            }
-        }
-    }
 }

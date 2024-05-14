@@ -6,8 +6,8 @@
         <div class="header__content">
             <nav class="header__nav">
                 <ul class="nav__list header__list">
-                    <li class="nav__item header__list-item active">
-                        <a href="">ГЛАВНАЯ</a>
+                    <li class="header__list-item active">
+                        <a href="http://localhost:3000/index.html">ГЛАВНАЯ</a>
                     </li>
                     <li class="header__list-item">
                         <a href="">О нас</a>
@@ -16,7 +16,7 @@
                         <a href="">УСЛУГИ</a>
                     </li>
                     <li class="header__list-item">
-                        <a href="">НАША КОМАНДА</a>
+                        <a href="http://localhost:3000/team.html">НАША КОМАНДА</a>
                     </li>
                 </ul>
             </nav>
@@ -55,3 +55,21 @@
         </div>
     </div>
 </header>
+
+<script>
+    const menuItems = document.querySelectorAll('.header__list-item')
+    const currentLocation = window.location
+
+    menuItems.forEach(function(menuItem) {
+        menuItem.classList.remove('active')
+        const menuItemHref = menuItem.querySelector('a').getAttribute('href')
+
+        if (currentLocation.pathname === '/') {
+            menuItems[0].classList.add('active')
+        } else {
+            if (menuItemHref === currentLocation.href) {
+                menuItem.classList.add('active')
+            }
+        }
+    })
+</script>
