@@ -19,7 +19,7 @@
     }
 
     &__logo {
-        width: 283px;
+        max-width: 283px;
     }
 
     &__copyright {
@@ -79,29 +79,97 @@
 
 @media(max-width: 990px) {
     .footer {
+        &__wrapper {
+            gap: 11.33px;
+        }
+        &__logo {
+            max-width: 194px;
+        }
+        &__copyright {
+            max-width: 90%;
+            font-size: 14px;
+        }
+        &__nav {
+            &-title {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+        &__list {
+            &-item {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+        .qr_code {
+            width: 111px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .footer {
         margin-top: 80px;
         margin-bottom: 24px;
 
         &__wrapper {
-            flex-direction: column;
-            gap: 50px;
+            gap: 40px 20px;
+            flex-wrap: wrap;
         }
 
-        &__block:nth-child(3) {
-            margin-top: -18px;
+        &__block {
+            width: calc(50% - 10px);
         }
 
-        &__block:last-child {
-            gap: 24px;
+        .footer__block:first-child {
+            order: 1;
         }
-
-        &__logo {
-            max-width: 300px;
-            width: 100%;
+        .footer__block:last-child {
+            order: 2;
+        }
+        .footer__block:nth-child(2) {
+            order: 3;
+        }
+        .footer__block:nth-child(3) {
+            order: 4;
         }
 
         &__copyright {
             margin-top: 24px;
+        }
+
+        &__list-item {
+            font-weight: 400;
+        }
+
+        &__list-item,
+        &__nav-title {
+            line-height: 100%;
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 479px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__block {
+            width: 100%;
+            order: inherit !important;
+        }
+        &__logo {
+            max-width: 100%;
+        }
+        &__copyright {
+            font-size: 13px;
+            line-height: 100%;
+        }
+        .qr_code {
+            width: 100%;
         }
     }
 }

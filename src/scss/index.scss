@@ -48,28 +48,42 @@
 
 @media(max-width: 990px) {
     .promo {
-        margin-top: 57px;
-
         &__header {
             flex-direction: column;
-            gap: 16px;
             align-items: flex-start;
+            gap: 16px;
+        }
+        &__offer {
+            max-width: 62%;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .promo {
+        margin-top: 57px;
+
+        &__offer {
+            max-width: 80%;
         }
 
         &__img {
             display: none;
         }
+    }
+}
 
+@media(max-width: 479px) {
+    .promo {
         &__offer {
             max-width: 100%;
 
-            &-btn {
-                margin-top: 32px;
-                padding: 8px 12px;
-            }
-
             &-descr {
                 font-size: 14px;
+            }
+
+            &-btn {
+                margin-top: 32px;
             }
         }
     }
@@ -133,6 +147,20 @@
 
 @media(max-width: 990px) {
     .services {
+        &__tab {
+            min-width: auto;
+            width: 50%;
+            font-size: 20px;
+        }
+        &__content {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px 20px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .services {
         margin-top: 94px;
 
         &__tabs {
@@ -141,32 +169,47 @@
         }
 
         &__tab {
-            padding: 12px 0;
-            font-size: 16px;
-            min-width: auto;
-            line-height: calc(26px / 16px) * 100%;
+            width: 100%;
+            padding: 14px 5px;
         }
 
         &__content {
-            grid-template-columns: repeat(2, calc(50% - 8px));
-            row-gap: 32px;
-            column-gap: 16px;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         &__item {
             height: auto;
             min-height: 120px;
 
+            &-title {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width: 479px) {
+    .services {
+        &__tab {
+            padding: 12px 5px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        &__content {
+            margin-top: 50px;
+            gap: 32px 16px;
+        }
+        &__item {
             &-photo {
                 width: 48px;
             }
-
             &-title {
                 font-size: 14px;
             }
         }
     }
 }
+
 
 // TRUST SECTION
 
@@ -306,24 +349,75 @@
 
 @media(max-width: 990px) {
     .trust {
+        &__card {
+            width: 38% !important;
+        }
+        &__stat {
+            gap: 30px;
+        }
+    }
+    .stat__list {
+        gap: 30px;
+        padding: 0;
+        padding-left: 30px;
+
+        &-item-number {
+            font-size: 24px;
+            line-height: 48px;
+        }
+
+        &-item-description {
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .trust {
         margin-top: 80px;
-
+        
         &__swiper {
-            margin-top: 12px;
             width: 100%;
-
-            &-control {
-                margin-top: 12px;
-            }
+            margin-top: 12px;
         }
 
         &__card {
             width: 100% !important;
+        }
+
+        &__stat {
+            gap: 50px;
+            flex-direction: column;
+
+            &-img {
+                max-width: 100%;
+            }
+
+            &-list {
+                border: none;
+                padding: 0;
+            }
+        }
+    }
+
+    .stat__list {
+        gap: 32px;
+
+        &-item-description {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 479px) {
+    .trust {
+        &__card {
             padding: 8px 22px 21px 16px;
 
             &-logo {
-                width: 179px;
-                height: 55px;
+                max-width: 179px;
+                justify-content: flex-start;
+                width: auto;
             }
 
             &-descr {
@@ -332,37 +426,19 @@
             }
         }
 
-        &__stat {
-            flex-direction: column;
-            gap: 50px;
-            
-            &-img {
-                max-width: 100%;
-            }
-
-            &-list {
-                padding: 0;
-                border-left: none;
+        &__swiper {
+            &-control {
+                margin-top: 12px;
             }
         }
     }
 
     .stat__list {
-        gap: 32px;
-
         &-item-number {
             font-size: 20px;
-            line-height: calc(48px / 20px) * 100%;
         }
-
-        &-item-number::after {
-            bottom: -12px;
-        }
-
         &-item-description {
-            margin-top: 16px;
             font-size: 14px;
-            line-height: calc(26px / 14px) * 100%;
         }
     }
 }
@@ -439,10 +515,18 @@
 
 @media(max-width: 990px) {
     .news {
+        &__content {
+            padding: 20px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .news {
         margin-top: 94px;
 
         &__items {
-            margin-top: 22px;
+            margin-top: 12px;
             gap: 32px;
         }
 
@@ -450,22 +534,21 @@
             flex-direction: column;
 
             &-preview {
-                border-radius: 5px 5px 0 0;
                 width: 100%;
+                border-radius: 5px 5px 0px 0px;
             }
 
             &-content {
-                border-radius: 0 0 5px 5px;
+                border-radius: 0px 0px 5px 5px;
             }
         }
+    }
+}
 
+@media(max-width: 479px) {
+    .news {
         &__content {
             padding: 12px;
-
-            &-date {
-                font-size: 12px;
-                line-height: calc(18px / 12px) * 100%;
-            }
 
             &-title {
                 font-size: 20px;
@@ -619,6 +702,12 @@
 }
 
 @media(max-width: 990px) {
+    .offices {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 767px) {
     .geo {
         display: none;
     }

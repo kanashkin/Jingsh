@@ -89,44 +89,88 @@
 
 @media(max-width: 1279px) {
     .contact {
-        padding: 0 24px;
+        padding: 0 40px;
     }
 }
 
 @media(max-width: 990px) {
     .contact {
-        padding: 0;
-        margin-top: 80px !important;
+        padding: 0 30px;
 
         &__wrapper {
-            padding: 55px 24px;
             flex-direction: column;
             align-items: center;
-            gap: 12px;
+            gap: 100px;
+            max-width: fit-content;
+            padding: 62px;
         }
 
         &__call {
-            max-width: 350px;
+            align-items: center;
 
-            &-title {
-                font-size: 32px;
-            }
             &-subtitle {
-                order: 3;
-                margin-top: 50px;
-                max-width: 100%;
+                text-align: center;
             }
+
             &-btn {
+                max-width: 90%;
                 margin-top: 24px;
             }
         }
+    }
+}
 
+@media(max-width: 767px) {
+    .contact {
+        padding: 0 24px;
+        margin-top: 80px !important;
+        
+        &__wrapper {
+            padding: 48px 32px;
+            gap: 70px;
+        }
+
+        &__call {
+            &-title {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media(max-width: 479px) {
+    .contact {
+        padding: 0;
+
+        &__wrapper {
+            max-width: 100%;
+            padding: 56px 24px;
+            gap: 12px;
+        }
+
+        &__call,
         &__form {
-            max-width: 350px;
             width: 100%;
+        }
 
-            &-accept {
-                font-size: 12px;
+        &__call {
+            align-items: flex-start;
+
+            &-title {
+                font-size: 32px;
+                order: 1;
+            }
+
+            &-subtitle {
+                margin-top: 50px;
+                text-align: left;
+                order: 3;
+            }
+
+            &-btn {
+                order: 2;
+                max-width: 100%;
+                margin-top: 24px;
             }
         }
     }

@@ -54,7 +54,13 @@ input {
 
 @media(max-width: 990px) {
 	.container {
+		padding: 0 30px;
+		max-width: 100%;
+	}
+}
+
+@media(max-width: 767px) {
+	.container {
 		padding: 0 24px;
-		max-width: calc(560px + 24px * 2);
 	}
 }

@@ -73,21 +73,24 @@
         }
     }
     .burger-btn {
+        width: 42px;
+        height: 42px;
         display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .mobile__menu {
         position: fixed;
-        height: 100vh;
+        height: 100%;
         top: 0;
         left: 0;
         width: 100%;
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 32px;
-        padding: 24px;
+        gap: 40px;
+        padding: 40px;
 
         z-index: -1;
         opacity: 0;
@@ -98,11 +101,22 @@
             display: flex;
         }
 
+        &-header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-close {
-            position: absolute;
-            right: 24px;
-            top: 32px;
-            padding: 4px;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 60%;
+            }
         }
     }
 
@@ -115,29 +129,73 @@
         flex-direction: column;
 
         &-item {
+            font-size: 18px;
             width: fit-content;
         }
     }
 
+    .mobile__menu .langs {
+        display: none;
+    }
+
     .langs {
-        padding-left: 20px;
+
+        &__item {
+            font-size: 14px;
+        }
     }
 }
 
 @media(max-width: 990px) {
+    .mobile__menu {
+        gap: 30px;
+        padding: 30px;
+    }
+}
+
+@media(max-width: 767px) {
     .header {
         margin-top: 24px;
-
+        &__content .langs {
+            display: none;
+        }
+        .mobile__menu .langs {
+            display: flex;
+            padding-left: 20px;
+        }
         &__logo {
-            width: 171px;
+            max-width: 65%;
         }
     }
 
-    .langs {
-        display: none;
+    .burger-btn {
+        width: 30px;
+        height: 30px;
+
+        img {
+            width: 75%;
+        }
     }
 
-    .burger-btn {
-        width: 22.5px;
+    .mobile__menu {
+        padding: 24px;
+
+        &-close {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .langs__item {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 479px) {
+    .header {
+        &__list-item,
+        .mobile__menu .langs__item {
+            font-size: 14px;
+        }
     }
 }

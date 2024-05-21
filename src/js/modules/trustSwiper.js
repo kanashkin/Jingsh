@@ -14,7 +14,7 @@ function trustSwiper() {
                 delay: 4000,
             },
             breakpoints: {
-                991: {
+                768: {
                     slidesPerView: 'auto',
                     spaceBetween: 24,
                 }
