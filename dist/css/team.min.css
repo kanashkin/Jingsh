@@ -1,0 +1,239 @@
+.contact {
+  padding: 0 40px;
+}
+.contact__wrapper {
+  margin: 0 auto;
+  max-width: 933px;
+  background: #FAFAFA;
+  border: 1px solid #E7E6E6;
+  border-radius: 15px;
+  padding: 62px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__call {
+  display: flex;
+  flex-direction: column;
+}
+.contact__call-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.contact__call-subtitle {
+  margin-top: 16px;
+  max-width: 261px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+}
+.contact__call-btn {
+  margin-top: auto;
+  padding: 8.5px 0;
+  max-width: 350px;
+  width: 100%;
+  gap: 15px;
+}
+.contact__call-btn i {
+  font-size: 15px;
+}
+.contact__form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact__form-input {
+  padding: 10px 14px 10px 42px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275), 0px 0px 0px 1px rgba(103, 110, 118, 0.1607843137), 0px 2px 5px 0px rgba(103, 110, 118, 0.0784313725);
+  font-family: "PT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #484848;
+  background: url("../img/common/planet.svg") left 14px center/contain no-repeat;
+  background-size: 16px;
+}
+.contact__form-input::placeholder {
+  color: #484848;
+}
+.contact__form-accept {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  color: #707070;
+}
+.contact__form-btn {
+  padding: 8.5px 0;
+  gap: 10px;
+}
+.contact__form-btn i {
+  font-size: 10px;
+}
+
+@media (max-width: 1279px) {
+  .contact {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 990px) {
+  .contact {
+    padding: 0;
+    margin-top: 80px !important;
+  }
+  .contact__wrapper {
+    padding: 55px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .contact__call {
+    max-width: 350px;
+  }
+  .contact__call-title {
+    font-size: 32px;
+  }
+  .contact__call-subtitle {
+    order: 3;
+    margin-top: 50px;
+    max-width: 100%;
+  }
+  .contact__call-btn {
+    margin-top: 24px;
+  }
+  .contact__form {
+    max-width: 350px;
+    width: 100%;
+  }
+  .contact__form-accept {
+    font-size: 12px;
+  }
+}
+.team {
+  margin-top: 80px;
+}
+.team__btn {
+  margin-top: 24px;
+}
+.team__items {
+  border-top: 1px solid #E6E6E6;
+  margin-top: 50px;
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.team__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.team__item-img {
+  display: flex;
+  max-height: 180px;
+  max-width: 180px;
+}
+.team__item-img img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+.team__item-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 137.5%;
+  letter-spacing: -0.1800000072px;
+}
+.team__item-post {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142.8571428571%;
+  letter-spacing: -0.0500000007px;
+}
+.team__item-descr {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142.8571428571%;
+  letter-spacing: -0.0500000007px;
+  color: #4F4D55;
+}
+.team__item-content {
+  padding-left: 32px;
+}
+.team__item-header {
+  display: flex;
+  justify-content: space-between;
+}
+.team__item-city {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: fit-content;
+}
+.team__item-city i {
+  font-size: 17px;
+  color: #E30519;
+}
+.team__item-city span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142.8571428571%;
+}
+
+@media (max-width: 1279px) {
+  .team__items {
+    display: flex;
+    flex-direction: column;
+  }
+  .team__item {
+    max-width: 588px;
+  }
+  .team__item-img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+@media (max-width: 999px) {
+  .team {
+    margin-top: 57px;
+  }
+  .team__btn {
+    margin-top: 16px;
+  }
+  .team__items {
+    margin-top: 80px;
+    gap: 32px;
+  }
+  .team__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .team__item-name {
+    font-size: 14px;
+  }
+  .team__item-post {
+    font-size: 12px;
+  }
+  .team__item-descr {
+    font-size: 12px;
+  }
+  .team__item-img {
+    max-height: 130px;
+    max-width: 130px;
+  }
+  .team__item-content {
+    padding-left: 0;
+  }
+}
+.contact {
+  margin-top: 230px;
+}
+
+@media (max-width: 1279px) {
+  .contact {
+    margin-top: 200px;
+  }
+}
