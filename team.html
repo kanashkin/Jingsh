@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Юридическая фирма Цзиньши - Наша команда</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/team.min.css">
+</head>
+</head>
+
+<body>
+<header class="header">
+<div class="header__wrapper container">
+<a class="logo header__logo" href="index.html" aria-label="Логотип компании">
+<img src="img/common/logo.svg" alt="Логотип компании">
+</a>
+<div class="header__content">
+<nav class="header__nav">
+<ul class="nav__list header__list">
+<li class="header__list-item active">
+<a href="http://localhost:3000/index.html">ГЛАВНАЯ</a>
+</li>
+<li class="header__list-item">
+<a href="">О нас</a>
+</li>
+<li class="header__list-item">
+<a href="">УСЛУГИ</a>
+</li>
+<li class="header__list-item">
+<a href="http://localhost:3000/team.html">НАША КОМАНДА</a>
+</li>
+</ul>
+</nav>
+<div class="langs">
+<button class="langs__item active" data-lang="ru">Ru</button>
+<button class="langs__item" data-lang="ch">Ch</button>
+</div>
+<button class="burger-btn">
+<img src="img/common/burger.svg" alt="">
+</button>
+</div>
+</div>
+<div class="mobile__menu">
+<button class="mobile__menu-close">
+<img src="img/common/close.svg" alt="Закрыть меню">
+</button>
+<nav class="header__nav">
+<ul class="nav__list header__list">
+<li class="nav__item header__list-item active">
+<a href="">ГЛАВНАЯ</a>
+</li>
+<li class="header__list-item">
+<a href="">О нас</a>
+</li>
+<li class="header__list-item">
+<a href="">УСЛУГИ</a>
+</li>
+<li class="header__list-item">
+<a href="">НАША КОМАНДА</a>
+</li>
+</ul>
+</nav>
+<div class="langs">
+<button class="langs__item active" data-lang="ru">Ru</button>
+<button class="langs__item" data-lang="ch">Ch</button>
+</div>
+</div>
+</header>
+
+<script>
+const menuItems = document.querySelectorAll('.header__list-item')
+const currentLocation = window.location
+
+menuItems.forEach(function(menuItem) {
+menuItem.classList.remove('active')
+const menuItemHref = menuItem.querySelector('a').getAttribute('href')
+
+if (currentLocation.pathname === '/') {
+menuItems[0].classList.add('active')
+} else {
+if (menuItemHref === currentLocation.href) {
+menuItem.classList.add('active')
+}
+}
+})
+</script>
+
+<main>
+<section class="team">
+<div class="team__wrapper container">
+<h1 class="page-title team__title">Наша команда</h1>
+<button class="red-btn team__btn">Получить консультацию</button>
+
+<div class="team__items">
+<article class="team__item">
+<div class="team__item-img">
+<img src="img/team-page/01.jpg" alt="Фото сотрудника">
+</div>
+<div class="team__item-content">
+<div class="team__item-header">
+<div class="team__item-header-block">
+<h2 class="team__item-name">Алексей Сергеев</h2>
+<h3 class="team__item-post">Акционерный партнер</h3>
+</div>
+<div class="team__item-city">
+<i class="_icon-place-point"></i>
+<span>Чунцин</span>
+</div>
+</div>
+<p class="team__item-descr">
+Lorem ipsum dolor sit amet consectetur.
+Pretium hendrerit lobortis amet nulla massa elementum.
+</p>
+</div>
+</article>
+<article class="team__item">
+<div class="team__item-img">
+<img src="img/team-page/02.jpg" alt="Фото сотрудника">
+</div>
+<div class="team__item-content">
+<div class="team__item-header">
+<div class="team__item-header-block">
+<h2 class="team__item-name">Алексей Сергеев</h2>
+<h3 class="team__item-post">Акционерный партнер</h3>
+</div>
+<div class="team__item-city">
+<i class="_icon-place-point"></i>
+<span>Чунцин</span>
+</div>
+</div>
+<p class="team__item-descr">
+Lorem ipsum dolor sit amet consectetur.
+Pretium hendrerit lobortis amet nulla massa elementum.
+</p>
+</div>
+</article>
+<article class="team__item">
+<div class="team__item-img">
+<img src="img/team-page/03.jpg" alt="Фото сотрудника">
+</div>
+<div class="team__item-content">
+<div class="team__item-header">
+<div class="team__item-header-block">
+<h2 class="team__item-name">Алексей Сергеев</h2>
+<h3 class="team__item-post">Акционерный партнер</h3>
+</div>
+<div class="team__item-city">
+<i class="_icon-place-point"></i>
+<span>Чунцин</span>
+</div>
+</div>
+<p class="team__item-descr">
+Lorem ipsum dolor sit amet consectetur.
+Pretium hendrerit lobortis amet nulla massa elementum.
+</p>
+</div>
+</article>
+<article class="team__item">
+<div class="team__item-img">
+<img src="img/team-page/04.jpg" alt="Фото сотрудника">
+</div>
+<div class="team__item-content">
+<div class="team__item-header">
+<div class="team__item-header-block">
+<h2 class="team__item-name">Алексей Сергеев</h2>
+<h3 class="team__item-post">Акционерный партнер</h3>
+</div>
+<div class="team__item-city">
+<i class="_icon-place-point"></i>
+<span>Чунцин</span>
+</div>
+</div>
+<p class="team__item-descr">
+Lorem ipsum dolor sit amet consectetur.
+Pretium hendrerit lobortis amet nulla massa elementum.
+</p>
+</div>
+</article>
+<article class="team__item">
+<div class="team__item-img">
+<img src="img/team-page/05.jpg" alt="Фото сотрудника">
+</div>
+<div class="team__item-content">
+<div class="team__item-header">
+<div class="team__item-header-block">
+<h2 class="team__item-name">Алексей Сергеев</h2>
+<h3 class="team__item-post">Акционерный партнер</h3>
+</div>
+<div class="team__item-city">
+<i class="_icon-place-point"></i>
+<span>Чунцин</span>
+</div>
+</div>
+<p class="team__item-descr">
+Lorem ipsum dolor sit amet consectetur.
+Pretium hendrerit lobortis amet nulla massa elementum.
+</p>
+</div>
+</article>
+<article class="team__item">
+<div class="team__item-img">
+<img src="img/team-page/06.jpg" alt="Фото сотрудника">
+</div>
+<div class="team__item-content">
+<div class="team__item-header">
+<div class="team__item-header-block">
+<h2 class="team__item-name">Алексей Сергеев</h2>
+<h3 class="team__item-post">Акционерный партнер</h3>
+</div>
+<div class="team__item-city">
+<i class="_icon-place-point"></i>
+<span>Чунцин</span>
+</div>
+</div>
+<p class="team__item-descr">
+Lorem ipsum dolor sit amet consectetur.
+Pretium hendrerit lobortis amet nulla massa elementum.
+</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="contact">
+<div class="contact__wrapper">
+<div class="contact__call">
+<h2 class="contact__call-title">Позвоните нам</h2>
+<h3 class="contact__call-subtitle">Или оставьте заявку мы перезвоним в течение 10 минут</h3>
+<a class="before-btn red-btn contact__call-btn" href="tel:+7 (495) 147-42-92">
+<i class="_icon-phone"></i>
++7 (495) 147-42-92
+</a>
+</div>
+<form class="contact__form" action="">
+<input class="contact__form-input" type="text" placeholder="Имя" autocomplete="off" required>
+<input class="contact__form-input" type="text" placeholder="+7 (999) 999-99-99" id="phone" autocomplete="off" required>
+<p class="contact__form-accept">
+Нажимая кнопку, Вы соглашаетесь с нашей политикой конфиденциальности.
+</p>
+<button class="red-btn before-btn contact__form-btn">
+Отправить
+<i class="_icon-arrow-btn"></i>
+</button>
+</form>
+</div>
+</section>
+</main>
+
+<a class="chat" href="">
+<i class="_icon-chat"></i>
+</a>
+
+<footer class="footer">
+<div class="container footer__wrapper">
+<div class="footer__block">
+<a class="logo footer__logo" href="index.html" aria-label="Логотип компании">
+<img src="img/common/logo.svg" alt="Логотип компании">
+</a>
+<div class="footer__copyright">Copyright © 2024. Jingsh Law Firm.</div>
+</div>
+<div class="footer__block">
+<div class="footer__nav-title">Меню</div>
+<nav class="footer__nav">
+<ul class="nav__list footer__list">
+<li class="footer__list-item">
+<a href="">Услуги в россии</a>
+</li>
+<li class="footer__list-item">
+<a href="">О нас</a>
+</li>
+<li class="footer__list-item">
+<a href="">Новости</a>
+</li>
+<li class="footer__list-item">
+<a href="">Наша команда</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="footer__block">
+<div class="footer__nav-title">Контакты</div>
+<nav class="footer__nav">
+<ul class="nav__list footer__list">
+<li class="footer__list-item">
+<a href="tel:+7 (495) 968-08-68">+7 (495) 968-08-68</a>
+</li>
+<li class="footer__list-item" style="text-transform: uppercase;">
+<a href="mailto:info@jingsh.ru">info@jingsh.ru</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="footer__block">
+<a class="privacy_policy footer__list-item" href="">Политика конфидициальности</a>
+<div class="qr_code">
+<img src="img/common/qr_code.png" alt="qr code">
+</div>
+</div>
+</div>
+</footer>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>
