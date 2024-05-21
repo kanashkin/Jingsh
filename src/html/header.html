@@ -1,13 +1,13 @@
 <header class="header">
     <div class="header__wrapper container">
-        <a class="logo header__logo" href="index.html" aria-label="Логотип компании">
+        <a class="logo header__logo" href="/" aria-label="Логотип компании">
             <img src="img/common/logo.svg" alt="Логотип компании">
         </a>
         <div class="header__content">
             <nav class="header__nav">
                 <ul class="nav__list header__list">
-                    <li class="header__list-item active">
-                        <a href="http://localhost:3000/index.html">ГЛАВНАЯ</a>
+                    <li class="header__list-item">
+                        <a href="/">ГЛАВНАЯ</a>
                     </li>
                     <li class="header__list-item">
                         <a href="">О нас</a>
@@ -16,7 +16,7 @@
                         <a href="">УСЛУГИ</a>
                     </li>
                     <li class="header__list-item">
-                        <a href="http://localhost:3000/team.html">НАША КОМАНДА</a>
+                        <a href="team.html">НАША КОМАНДА</a>
                     </li>
                 </ul>
             </nav>
@@ -31,7 +31,7 @@
     </div>
     <div class="mobile__menu">
         <div class="mobile__menu-header">
-            <a class="logo header__logo" href="index.html" aria-label="Логотип компании">
+            <a class="logo header__logo" href="/" aria-label="Логотип компании">
                 <img src="img/common/logo.svg" alt="Логотип компании">
             </a>
             <button class="mobile__menu-close">
@@ -40,7 +40,7 @@
         </div>
         <nav class="header__nav">
             <ul class="nav__list header__list">
-                <li class="nav__item header__list-item active">
+                <li class="header__list-item">
                     <a href="">ГЛАВНАЯ</a>
                 </li>
                 <li class="header__list-item">
@@ -50,7 +50,7 @@
                     <a href="">УСЛУГИ</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="">НАША КОМАНДА</a>
+                    <a href="team.html">НАША КОМАНДА</a>
                 </li>
             </ul>
         </nav>
@@ -60,21 +60,3 @@
         </div>
     </div>
 </header>
-
-<script>
-    const menuItems = document.querySelectorAll('.header__list-item')
-    const currentLocation = window.location
-
-    menuItems.forEach(function(menuItem) {
-        menuItem.classList.remove('active')
-        const menuItemHref = menuItem.querySelector('a').getAttribute('href')
-
-        if (currentLocation.pathname === '/') {
-            menuItems[0].classList.add('active')
-        } else {
-            if (menuItemHref === currentLocation.href) {
-                menuItem.classList.add('active')
-            }
-        }
-    })
-</script>
