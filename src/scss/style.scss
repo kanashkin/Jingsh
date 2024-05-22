@@ -20,6 +20,7 @@
 
 .red-btn:hover {
     background-color: $hoverRedColor;
+    transform: scale(1.05);
 }
 
 .before-btn {
@@ -80,10 +81,26 @@
 
 .chat:hover {
     background: $hoverRedColor;
+    transform: scale(1.15);
 }
 
 .logo img {
     object-fit: none;
+}
+
+// ANIMATIONS
+
+.animation-scroll {
+    opacity: 0;
+    transform: translateY(12vh);
+    transition: all 1.5s;
+    // filter: blur(4px);
+}
+
+.animation-scroll.animated {
+    filter: blur(0);
+    opacity: 1;
+    transform: translate(0) !important;
 }
 
 @media(max-width: 1279px) {
