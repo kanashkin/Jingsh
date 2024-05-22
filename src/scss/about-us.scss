@@ -1,0 +1,102 @@
+@import 'base/variables';
+@import 'blocks/_contact.scss';
+
+.about-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+// PROMO SECTION
+
+.promo {
+    margin-top: 80px;
+
+    &__title {
+        margin-top: 24px;
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: calc(26px / 18px) * 100%;
+        max-width: 50%;
+        color: #0A090B;
+    }
+
+    &__descr {
+        padding-top: 24px;
+        margin-top: 80px;
+        border-top: 1px solid #E6E6E6
+    }
+}
+
+// ADVANTAGES
+
+.advantages {
+    margin-top: 140px;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 26px;
+        color: #0A090B;
+    }
+
+    &__wrapper {
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bg {
+        width: calc(586px / 1200px) * 100%;
+        background: url('../img/about-us-page/advantages/bg.jpg')
+            center / cover no-repeat;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        max-width: 384px;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        &-item-title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: calc(26px / 24px) * 100%;
+        }
+
+        &-item-descr {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: calc(24px / 16px) * 100%;
+            color: #0A090B;
+            position: relative;
+        }
+
+        &-item-descr::before {
+            content: '';
+            position: absolute;
+            bottom: calc(100% + 12px);
+            left: 0;
+            width: 50px;
+            height: 8px;
+            background: $redColor;
+        }
+    }
+}
+
+// CONTACT SECTION
+
+.contact {
+    margin-top: 140px;
+}
+

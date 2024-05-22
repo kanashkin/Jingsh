@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Юридическая фирма Цзиньши",
+	"cssHref": "css/about-us.min.css"
+})
+
+<body>
+	@@include('html/header.html',{})
+
+	<main page-index="2">
+        <section class="promo animation-scroll">
+            <div class="container">
+                <img class="promo__map" src="img/common/promo-map.png" alt="">
+                <h1 class="page-title promo__title">О нас</h1>
+                <p class="promo__subtitle">
+                    Познакомим вас тем, как мы совмещаем непоколебимые восточные
+                    ценности с инновационными западными методами
+                </p>
+                <p class="promo__descr about-text">
+                    Созданная в г. Пекин в 1994 года Юридическая фирма Цзиньши,
+                    по состоянию на начало 2022 года, является третьей по величине
+                    юридической фирмой КНР. Непрерывно развиваясь, Цзиньши расширяет
+                    своё присутствие на международных рынках, становясь глобальным
+                    поставщиком юридических и иных профессиональных услуг для бизнеса.
+                    В России основной офис Цзиньши расположился в центре столицы,
+                    но при этом способен предоставлять услуги доверителям во всех её регионах.
+                </p>
+            </div>
+        </section>
+        <section class="advantages animation-scroll">
+            <div class="container">
+                <h2 class="advantages__title">Наши преимущества</h2>
+
+                <div class="advantages__wrapper">
+                    <div class="advantages__bg"></div>
+                    <ul class="advantages__list">
+                        <li class="advantages__list-item">
+                            <span class="advantages__list-item-title">Глобальность</span>
+                            <span class="advantages__list-item-descr">Оказываем услуги на всех континентах.</span>
+                        </li>
+                        <li class="advantages__list-item">
+                            <span class="advantages__list-item-title">Опыт</span>
+                            <span class="advantages__list-item-descr">Признанные специалисты с богатым опытом</span>
+                        </li>
+                        <li class="advantages__list-item">
+                            <span class="advantages__list-item-title">Индивидуальный подход</span>
+                            <span class="advantages__list-item-descr">Учитываем любые особенности и предпочтения</span>
+                        </li>
+                        <li class="advantages__list-item">
+                            <span class="advantages__list-item-title">Нестандартные решения</span>
+                            <span class="advantages__list-item-descr">Творческий подход к решению проблем</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        @@include('html/contact.html',{})
+    </main>
+
+	<a class="chat" href="">
+		<i class="_icon-chat"></i>
+	</a>
+
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

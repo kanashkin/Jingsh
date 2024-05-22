@@ -2,11 +2,14 @@ import IMask from 'imask';
 
 function phoneMask() {
     const element = document.getElementById('phone');
-    const maskOptions = {
-        mask: '+7 (000) 000-00-00',
-        lazy: false
-    }; 
-    const mask = new IMask(element, maskOptions);
+    
+    if (element) {
+        const maskOptions = {
+            mask: '+7 (000) 000-00-00',
+            lazy: false
+        }; 
+        const mask = new IMask(element, maskOptions);
+    }
     // const element2 = document.getElementById('email');
     // const maskOptions2 = {    
     //     mask(value) {
