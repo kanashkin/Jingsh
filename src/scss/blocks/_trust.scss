@@ -1,0 +1,231 @@
+// TRUST SECTION
+
+.trust {
+    margin-top: 140px;
+    padding-top: 14px;
+    overflow: hidden;
+
+    &__swiper {
+        margin-top: 48px;
+        width: calc(100% + 55vw);
+
+        &-control {
+            margin-top: 32px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+
+        &-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid #E7E6E6;
+            background-color: #FAFAFA;
+            transition: .3s all;
+        }
+
+        &-btn:hover {
+            border: 1px solid #000000;
+            background-color: #000000;
+        }
+
+        &-btn:hover div {
+            color: #fff;
+        }
+    }
+
+    &__card {
+        width: 486px !important;
+        height: auto !important;
+        padding: 16px 24px 55px 24px;
+        gap: 8px;
+        border-radius: 5px;
+        background: #FAFAFA;
+        border: 1px solid #E7E6E6;
+
+        &-logo {
+            width: 225px;
+            height: 69px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-logo img {
+            max-width: 100%;
+        }
+
+        &-descr {
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: calc(24px / 16px) * 100%;
+        }
+    }
+
+    &__stat {
+        margin-top: 80px;
+        display: flex;
+        gap: 64px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-img {
+            border-radius: 70px 70px 12px 12px;
+            max-width: calc(588px / 1200px) * 100%;
+        }
+
+        &-list {
+            border-left: 1px solid #E7E6E6;
+            padding: 55px 100px 55px 64px;
+        }
+    }
+}
+
+.stat__list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    &-item-number {
+        display: block;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: calc(48px / 36px) * 100%;
+        position: relative;
+    }
+
+    &-item-number::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        width: 50px;
+        height: 8px;
+        background-color: $redColor;
+    }
+
+    &-item-description {
+        margin-top: 32px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: calc(26px / 18px) * 100%;
+    }
+}
+
+@media(max-width: 1279px) {
+    .trust {
+        &__swiper {
+            width: calc(100% + 50vw);
+        }
+
+        &__stat {
+            gap: 65px;
+
+            &-img {
+                max-width: calc(426px / 977px) * 100%;
+            }
+
+            &-list {
+                padding: 55px 36px 55px 65px;
+            }
+        }
+    }
+}
+
+@media(max-width: 990px) {
+    .trust {
+        &__card {
+            width: 38% !important;
+        }
+        &__stat {
+            gap: 30px;
+        }
+    }
+    .stat__list {
+        gap: 30px;
+        padding: 0;
+        padding-left: 30px;
+
+        &-item-number {
+            font-size: 24px;
+            line-height: 48px;
+        }
+
+        &-item-description {
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .trust {
+        margin-top: 80px;
+        
+        &__swiper {
+            width: 100%;
+            margin-top: 12px;
+        }
+
+        &__card {
+            width: 100% !important;
+        }
+
+        &__stat {
+            gap: 50px;
+            flex-direction: column;
+
+            &-img {
+                max-width: 100%;
+            }
+
+            &-list {
+                border: none;
+                padding: 0;
+            }
+        }
+    }
+
+    .stat__list {
+        gap: 32px;
+
+        &-item-description {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 479px) {
+    .trust {
+        &__card {
+            padding: 8px 22px 21px 16px;
+
+            &-logo {
+                max-width: 179px;
+                justify-content: flex-start;
+                width: auto;
+            }
+
+            &-descr {
+                margin-top: 12px;
+                font-size: 14px;
+            }
+        }
+
+        &__swiper {
+            &-control {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    .stat__list {
+        &-item-number {
+            font-size: 20px;
+        }
+        &-item-description {
+            font-size: 14px;
+        }
+    }
+}
