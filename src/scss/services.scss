@@ -57,13 +57,19 @@
 
 .services {
     &__content {
-        margin-top: 48px;
-        display: none;
+        display: flex;
         justify-content: space-between;
+
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
     }
 
     &__content.active {
-        display: flex;
+        margin-top: 48px;
+        opacity: 1;
+        pointer-events: all;
+        height: auto;
     }
 
     &__items {
