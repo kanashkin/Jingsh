@@ -148,3 +148,83 @@
         }
     }
 }
+
+// SERVICES COMMON
+
+.services {
+    margin-top: 154px;
+
+    &__tabs {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tab {
+        padding-bottom: 12px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: calc(26px / 24px) * 100%;
+        min-width: 439px;
+        color: $grayColor;
+        border-bottom: 1px solid $grayColor;
+        transition: .3s all;
+    }
+
+    &__tab.active {
+        color: #000000;
+        border-bottom: 1px solid $redColor;
+    }
+
+    &__item-title {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: calc(26px / 18px) * 100%;
+    }
+}
+
+@media(max-width: 990px) {
+    .services {
+        &__tab {
+            min-width: auto;
+            width: 50%;
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .services {
+        margin-top: 94px;
+
+        &__tabs {
+            margin-top: 12px;
+            flex-direction: column;
+        }
+        &__tab {
+            width: 100%;
+            padding: 14px 5px;
+        }
+        &__item-title {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 479px) {
+    .services {
+        &__tab {
+            padding: 12px 5px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        &__item {
+            &-photo {
+                width: 48px;
+            }
+            &-title {
+                font-size: 14px;
+            }
+        }
+    }
+}

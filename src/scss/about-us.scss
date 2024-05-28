@@ -213,7 +213,7 @@
     }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 479px) {
     .advantages {
 
         &__title {
@@ -283,7 +283,7 @@
         }
 
         &__img img {
-            height: 45vh !important;
+            height: 40vh !important;
         }
 
         &__img.flex img {
@@ -292,7 +292,7 @@
     }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 479px) {
     .about {
 
         &__title {
